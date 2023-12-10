@@ -8,13 +8,14 @@ const NavBar = () => {
 
   const navLinks = [
     { id: 1, name: "Home", link: "/home" },
+    { id: 2, name: "Services", link: "/services" },
     { id: 3, name: "About Us", link: "/about" },
     { id: 4, name: "Careers", link: "/careers" },
     { id: 5, name: "Contact Us", link: "/contact" },
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-gray-800 fixed bg-gray-100">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-gray-800 fixed bg-white">
       <div className="inline-flex">
           <img src={img} alt="barber" width={75} className="pt-2" />
         <h1 className="text-5xl text-black font-bold font-logo ml-2 pt-4">
@@ -26,7 +27,7 @@ const NavBar = () => {
           return (
             <li
               key={id}
-              className="px-4 cursor-pointer capitalize font-bold text-2xl text-gray-900 hover:scale-110 duration-200"
+              className="px-4 py-1 cursor-pointer capitalize font-bold text-2xl text-gray-900 hover:scale-105 duration-150 hover:bg-gray-200 hover:rounded-lg"
             >
               <Link to={link}>{name}</Link>
             </li>
@@ -45,7 +46,7 @@ const NavBar = () => {
           {navLinks.map(({ id, name, link }) => (
             <li
               key={id}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl font-bold text-gray-900 hover:scale-110 duration-200"
+              className="px-4 cursor-pointer capitalize py-2 text-4xl font-bold text-gray-900 hover:scale-105 duration-200 hover:bg-gray-200 hover:rounded-lg"
             >
               <button
                 onClick={() => setNav(!nav)}
