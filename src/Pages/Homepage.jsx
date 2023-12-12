@@ -12,7 +12,7 @@ const Homepage = () => {
         <img src={img} alt="homepageimg" className="w-full rounded-lg shadow-2xl shadow-black" />
         <div className="sm:pt-10 md:pt-10 pt-5 px-10 text-2xl">
           Welcome to Jimmy's Barbershop, where tradition meets style!
-          Established in 1985, we take pride in being a family-owned and
+          Established in 1965, we take pride in being a family-owned and
           operated haven for all your grooming needs. With decades of
           experience, our skilled barbers have been dedicated to delivering
           top-notch services that stand the test of time.
