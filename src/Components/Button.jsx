@@ -1,10 +1,11 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
-const Button = () => {
+const Button = ({buttonName, pathName}) => {
   return (
-    <div className='py-1 px-1 rounded-lg bg-gray-300 text-black text-lg items-center text-center'>
-      Contact Us!
-    </div>
+    <Link to={pathName} className='py-1 px-4 rounded-lg bg-black text-white font-bold text-lg items-center text-center'>
+      {buttonName}
+    </Link>
   )
 }
 
