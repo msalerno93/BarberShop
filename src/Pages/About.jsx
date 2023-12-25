@@ -11,9 +11,9 @@ const About = () => {
       </div>
       <div className="grid grid-cols-1 text-center pt-10 pb-5">
         <div className="flex justify-center items-center">
-          <img src={img} alt="" className="w-2/4 h-11/12 pb-5" />
+          <img src={img} alt="" className="w-2/4 h-11/12 shadow-xl shadow-black" />
         </div>
-        <div className="text-2xl">
+        <div className="text-2xl pt-5">
           <p className="px-20">
           Welcome to Jimmy's Barbershop, where tradition meets style!
           Established in 1965, we take pride in being a family-owned and
