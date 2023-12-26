@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Components/Button";
+import GoogleMap from "../Components/GoogleMap";
 
 const Contact = () => {
   return (
@@ -31,7 +32,9 @@ const Contact = () => {
             <Button buttonName="Contact Us">Contact Me</Button>
           </div>
         </form>
-        <div>Map Goes Here</div>
+        <div>
+          <GoogleMap />
+        </div>
       </div>
     </div>
   );
