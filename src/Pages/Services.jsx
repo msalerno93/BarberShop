@@ -56,7 +56,7 @@ const Services = () => {
       </div>
       <div className="grid gap-2 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 text-center pt-16">
       {services.map(({ name, id, price }) => {
-       return  <div className="shadow-lg mx-12 my-5 shadow-black rounded-3xl py-10" key={id}>
+       return  <div className="shadow-lg mx-12 my-5 shadow-black rounded-3xl py-10 hover:scale-110 duration-200" key={id}>
         <p className="text-2xl font-bold">{name}</p>
         <p className="text-2xl">${price}</p>
        </div>;
